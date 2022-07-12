@@ -1,0 +1,22 @@
+.footer {
+  margin: 72px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  font-size: 0.6rem;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+.footerItem {
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    margin: 36px 0;
+  }
+}

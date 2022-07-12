@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Gorditas medium";
+  src: url("./fonts/gordita-medium.otf");
+}
+@font-face {
+  font-family: "Gorditas light";
+  src: url("./fonts/gordita-light.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gorditas medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #fff;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 0 20rem;
+}
+
+.mainSection {
+  background: linear-gradient(180deg, #edf8f7 0%, #ffffff 99.84%);
+}
+
+.faqSection {
+  background-color: #f8f8f8;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.primaryColor {
+  color: #43a5a1;
+}
+
+.primaryColorBackground {
+  background-color: #43a5a1;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disabledColor {
+  background-color: #b5b5b5;
+}
+
+.disabledColorText {
+  /* Footer */
+  color: #b5b5b5;
+}
+
+.centerText {
+  /* FAQ */
+  text-align: center;
+}
+
+.centerContent {
+  /* FAQ */
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 100px;
+  height: 32px;
+  margin-top: 21px;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.widthFillAvailable {
+  width: -webkit-fill-available;
+}
+
+.uppercasing {
+  text-transform: uppercase;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 12rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
