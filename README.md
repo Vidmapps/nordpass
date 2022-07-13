@@ -6,7 +6,7 @@
 
 A responsive landing page with an option to filter top leaked passwords from a live data base.
 
-- Click `Sort` dropdown sort by "ABC" or "Count (times used)".
+- Click `Sort` dropdown sort by "ABC" or "Count" (times used) to sort based on an option.
 - Click `Show All` to see all available passwords leaked.
 
 ### Installation
