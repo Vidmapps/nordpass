@@ -1,4 +1,4 @@
-import styles from "./PasswordsSection.module.css";
+import styles from "./PasswordsSection.module.scss";
 function Password(props) {
   return (
     <tr className={styles.password}>

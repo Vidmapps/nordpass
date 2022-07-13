@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ArrowUp from "../../assets/ArrowUp.svg";
 import ArrowDown from "../../assets/ArrowDown.svg";
-import styles from "./FAQ.module.css";
+import styles from "./FAQ.module.scss";
 
 const FAQCard = (props) => {
   const [isActive, setIsActive] = useState(false);

@@ -1,6 +1,6 @@
 import { FAQinfo } from "../../faqData";
 import FAQCard from "./FAQCard.js";
-import styles from "./FAQ.module.css";
+import styles from "./FAQ.module.scss";
 
 const FAQ = () => {
   return (

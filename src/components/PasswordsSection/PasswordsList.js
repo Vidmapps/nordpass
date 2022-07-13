@@ -5,27 +5,25 @@ import Password from "./Password";
 const PasswordsList = () => {
   const ctx = useContext(PasswordsContext);
 
+  const passwordComponent = (password) => {
+    return (
+      <Password
+        key={password.value + password.count}
+        value={password.value}
+        count={password.count}
+      ></Password>
+    );
+  };
+
   return (
     <tbody>
       {!ctx.isShowAll &&
         ctx.leakedPasswords.slice(0, 0 + 10).map((password) => {
-          return (
-            <Password
-              key={Math.random()}
-              value={password.value}
-              count={password.count}
-            ></Password>
-          );
+          return passwordComponent(password);
         })}
       {ctx.isShowAll &&
         ctx.leakedPasswords.map((password) => {
-          return (
-            <Password
-              key={Math.random()}
-              value={password.value}
-              count={password.count}
-            ></Password>
-          );
+          return passwordComponent(password);
         })}
     </tbody>
   );

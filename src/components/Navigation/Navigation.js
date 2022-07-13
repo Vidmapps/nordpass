@@ -1,6 +1,6 @@
 import Logo from "../../assets/Logo.svg";
 import Burger from "../../assets/Burger.svg";
-import styles from "./Navigation.module.css";
+import styles from "./Navigation.module.scss";
 
 export default function Navigation() {
   return (

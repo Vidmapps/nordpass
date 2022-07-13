@@ -1,5 +1,5 @@
 import PromoImage from "../../assets/PromoImage.svg";
-import styles from "./Promo.module.css";
+import styles from "./Promo.module.scss";
 
 export default function Promo() {
   return (

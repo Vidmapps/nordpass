@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from "./PasswordsSection.module.css";
+import styles from "./PasswordsSection.module.scss";
 import PasswordsList from "./PasswordsList";
 import PasswordsContext from "../../store/passwords-context";
 
@@ -14,9 +14,9 @@ const PasswordsTable = () => {
             <th className={`textAlignStart ${styles.borderBottom}`}>
               Password
             </th>
-            <th className={`textAlignEnd ${styles.borderBottom}`}>
+            <th className={`textAlignEnd  ${styles.borderBottom}`}>
               <select
-                className="dropdown"
+                className="pointer"
                 name="sort"
                 id="sort"
                 value={ctx.sortOption}

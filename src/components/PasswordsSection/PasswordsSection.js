@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import PasswordsContext from "../../store/passwords-context";
-import styles from "./PasswordsSection.module.css";
+import styles from "./PasswordsSection.module.scss";
 import PasswordsTable from "./PasswordsTable";
 
 const PasswordsSection = () => {
