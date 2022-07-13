@@ -39,7 +39,7 @@ export const PasswordsContextProvider = (props) => {
 
     const sorted = () => {
       if (option === "count") {
-        return leakedPasswords.sort((a, b) => a[option] - b[option]);
+        return leakedPasswords.sort((a, b) => b[option] - a[option]);
       }
 
       if (option === "value") {
