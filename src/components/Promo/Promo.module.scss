@@ -1,41 +1,39 @@
+@import "../../mixins";
+@import "../../variables";
+
 .promo {
   display: flex;
+  @include media-max-width-l {
+    display: block;
+  }
 }
 
 .leftSide {
-  margin-top: 130px;
+  margin-top: $margin-xl;
+  @include media-max-width-l {
+    width: 100%;
+  }
 }
 
 .rightSide {
-  margin-top: 100px;
+  margin-top: $margin-xl;
   max-width: -webkit-fill-available;
 }
 
 .promoText {
-  font-size: xxx-large;
+  font-size: $font-xl;
   line-height: normal;
+  @include media-max-width-l {
+    font-size: $font-l;
+  }
 }
 
 .promoBtn {
   width: 167px;
   height: 54px;
-  margin-top: 36px;
+  margin-top: $margin-m;
   padding: 16px 28px;
-  font-size: 1.3rem;
+  font-size: $font-l;
   color: #fff;
-  border-radius: 3px;
-}
-
-@media (max-width: 1000px) {
-  .promo {
-    display: block;
-  }
-  .leftSide,
-  .rightSide {
-    width: 100%;
-  }
-  .promoText {
-    font-size: xx-large;
-    line-height: normal;
-  }
+  border-radius: $border-radius;
 }

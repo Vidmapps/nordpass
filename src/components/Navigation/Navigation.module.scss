@@ -1,50 +1,49 @@
+@import "../../mixins";
+@import "../../variables";
+
 .navigation {
   display: flex;
   justify-content: space-between;
+  @include media-max-width-m {
+    height: 70px;
+  }
 }
 
 .nav {
   list-style-type: none;
   display: flex;
   margin: 0%;
+  @include media-max-width-m {
+    display: none;
+  }
 }
 
 .navItem {
-  margin: 20px 12px;
-  padding-top: 6px;
+  margin: $margin-xl $margin-m;
+  padding-top: $padding-xs;
 }
 
 .btn {
   width: 100px;
   height: 32px;
-  margin-top: 21px;
-  padding: 6px 16px;
-  font-size: 0.8rem;
+  padding: $padding-xs $padding-s;
+  font-size: $font-s;
   color: #fff;
-  border-radius: 3px;
+  border-radius: $border-radius;
 }
 
 .burger {
   display: none;
-}
-
-@media (max-width: 860px) {
-  .logo {
-    margin-top: 20px;
-  }
-
-  .navigation {
-    height: 70px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .burger {
+  @include media-max-width-m {
     display: inline;
     position: absolute;
     right: 34px;
     top: 38px;
+  }
+}
+
+@include media-max-width-m {
+  .logo {
+    margin-top: $margin-xl;
   }
 }

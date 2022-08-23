@@ -1,3 +1,6 @@
+@import "./mixins";
+@import "./variables";
+
 @font-face {
   font-family: "Gorditas medium";
   src: url("./fonts/gordita-medium.otf");
@@ -18,7 +21,7 @@ body {
   font-family: "Gorditas medium", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: $font-m;
   line-height: 24px;
   background-color: #fff;
 }
@@ -29,7 +32,16 @@ ul {
 }
 
 .container {
-  padding: 0 20rem;
+  padding: 0 $padding-l * 20;
+  @include media-max-width-xl {
+    padding: 0 $padding-l * 12;
+  }
+  @include media-max-width-l {
+    padding: 0 $padding-l * 4;
+  }
+  @include media-max-width-s {
+    padding: 0 $padding-l;
+  }
 }
 
 .mainSection {
@@ -80,11 +92,11 @@ a {
 .btn {
   width: 100px;
   height: 32px;
-  margin-top: 21px;
+  margin-top: $margin-m;
   padding: 6px 16px;
-  font-size: 0.8rem;
+  font-size: $font-s;
   color: #fff;
-  border-radius: 3px;
+  border-radius: $border-radius;
 }
 
 .widthFillAvailable {
@@ -93,22 +105,4 @@ a {
 
 .uppercasing {
   text-transform: uppercase;
-}
-
-@media (max-width: 1300px) {
-  .container {
-    padding: 0 12rem;
-  }
-}
-
-@media (max-width: 1100px) {
-  .container {
-    padding: 0 4rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    padding: 0 1rem;
-  }
 }
