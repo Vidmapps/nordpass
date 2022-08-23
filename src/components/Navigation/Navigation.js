@@ -2,7 +2,7 @@ import Logo from "../../assets/Logo.svg";
 import Burger from "../../assets/Burger.svg";
 import styles from "./Navigation.module.scss";
 
-export default function Navigation() {
+const Navigation = () => {
   return (
     <div className={styles.navigation}>
       <img className={`${styles.logo} pointer`} src={Logo} alt="Logo" />
@@ -28,4 +28,6 @@ export default function Navigation() {
       </div>
     </div>
   );
-}
+};
+
+export default Navigation;

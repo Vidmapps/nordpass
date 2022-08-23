@@ -1,5 +1,6 @@
 import styles from "./PasswordsSection.module.scss";
-function Password(props) {
+
+const Password = (props) => {
   return (
     <tr className={styles.password}>
       <td className={`${styles.borderBottom} ${styles.tdRight}`}>
@@ -10,6 +11,6 @@ function Password(props) {
       </td>
     </tr>
   );
-}
+};
 
 export default Password;

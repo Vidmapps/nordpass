@@ -1,12 +1,14 @@
+import { Fragment } from "react";
+
 import Footer from "./components/Footer/Footer";
 import FAQ from "./components/FAQ/FAQ";
 import Navigation from "./components/Navigation/Navigation";
 import Promo from "./components/Promo/Promo";
 import PasswordsSection from "./components/PasswordsSection/PasswordsSection";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Fragment>
       <section className="mainSection container">
         <Navigation />
         <Promo />
@@ -18,8 +20,8 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </div>
+    </Fragment>
   );
-}
+};
 
 export default App;

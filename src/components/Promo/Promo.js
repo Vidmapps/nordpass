@@ -1,7 +1,7 @@
 import PromoImage from "../../assets/PromoImage.svg";
 import styles from "./Promo.module.scss";
 
-export default function Promo() {
+const Promo = () => {
   return (
     <div className={styles.promo}>
       <div className={styles.leftSide}>
@@ -19,4 +19,6 @@ export default function Promo() {
       <img className={styles.rightSide} src={PromoImage} alt="Promo" />
     </div>
   );
-}
+};
+
+export default Promo;
