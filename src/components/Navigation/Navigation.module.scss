@@ -1,5 +1,6 @@
 @import "../../mixins";
 @import "../../variables";
+@import "../../extensions";
 
 .navigation {
   display: flex;
@@ -24,12 +25,7 @@
 }
 
 .btn {
-  width: 100px;
-  height: 32px;
-  padding: $padding-xs $padding-s;
-  font-size: $font-s;
-  color: #fff;
-  border-radius: $border-radius;
+  @extend .button-style;
 }
 
 .burger {

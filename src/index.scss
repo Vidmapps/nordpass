@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./variables";
+@import "./extensions";
 
 @font-face {
   font-family: "Gorditas medium";
@@ -90,13 +91,8 @@ a {
 }
 
 .btn {
-  width: 100px;
-  height: 32px;
+  @extend .button-style;
   margin-top: $margin-m;
-  padding: 6px 16px;
-  font-size: $font-s;
-  color: #fff;
-  border-radius: $border-radius;
 }
 
 .widthFillAvailable {
